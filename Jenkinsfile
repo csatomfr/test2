@@ -35,7 +35,8 @@ pipeline {
 
         stage('') {
           steps {
-            sh 'curl -X POST -H "Content-Type: application/json" -d "{\\"chat_id\\": \\"902285901\\", \\"text\\": \\"Falló la tarea $JOB_NAME!! $BUILD_NUMBER,  \\", \\"disable_notification\\": false}" https://api.telegram.org/bot6972167273:AAFfUCU_9JQyRVkQSbftk_Sc3FVqSpE_SEg/sendMessage'
+            sh 'curl -X POST -H "Content-Type: application/json" -d "{\\"chat_id\\": \\"902285901\\", \\"text\\": \\"FallÃ³ la tarea $JOB_NAME!! $BUILD_NUMBER,  \\", \\"disable_notification\\": false}" https://api.telegram.org/bot6972167273:AAFfUCU_9JQyRVkQSbftk_Sc3FVqSpE_SEg/sendMessage'
+            sh 'echo "Enviado mensaje telegram"'
           }
         }
 
